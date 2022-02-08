@@ -1,6 +1,13 @@
 {
   "version": 2,
   "projects": {
+    "categories": "libs/categories",
+    "graphql-api": "apps/graphql-api",
+    "orders": "libs/orders",
+    "posts": "libs/posts",
+    "products": "libs/products",
+    "rest-api": "apps/rest-api",
+    "users": "libs/users",
     "web": "apps/web",
     "web-e2e": "apps/web-e2e"
   }

@@ -14,7 +14,13 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@viewscape/categories": ["libs/categories/src/index.ts"],
+      "@viewscape/orders": ["libs/orders/src/index.ts"],
+      "@viewscape/posts": ["libs/posts/src/index.ts"],
+      "@viewscape/products": ["libs/products/src/index.ts"],
+      "@viewscape/users": ["libs/users/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

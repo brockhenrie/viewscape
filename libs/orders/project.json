@@ -1,0 +1,33 @@
+{
+  "root": "libs/orders",
+  "sourceRoot": "libs/orders/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/orders",
+        "main": "libs/orders/src/index.ts",
+        "tsConfig": "libs/orders/tsconfig.lib.json",
+        "assets": ["libs/orders/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/orders/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/orders"],
+      "options": {
+        "jestConfig": "libs/orders/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
