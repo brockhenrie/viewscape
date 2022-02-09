@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "auth": "libs/auth",
     "categories": "libs/categories",
     "graphql-api": "apps/graphql-api",
     "orders": "libs/orders",

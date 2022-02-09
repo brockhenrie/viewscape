@@ -1,8 +1,9 @@
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable no-useless-catch */
 import { ApolloError, AuthenticationError } from 'apollo-server-express';
-import { authorizeAndVerify } from '../../../../../../apps/graphql-api/src/app/auth/auth';
+import { authorizeAndVerify } from '@viewscape/auth';
 import { userOwnership } from '../../../../../../apps/graphql-api/src/app/utils/tools';
 import { User } from '../../Schema/user.schema';
 

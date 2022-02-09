@@ -1,0 +1,34 @@
+{
+  "root": "libs/auth",
+  "sourceRoot": "libs/auth/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/auth",
+        "tsConfig": "libs/auth/tsconfig.lib.json",
+        "packageJson": "libs/auth/package.json",
+        "main": "libs/auth/src/index.ts",
+        "assets": ["libs/auth/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/auth/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/auth"],
+      "options": {
+        "jestConfig": "libs/auth/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

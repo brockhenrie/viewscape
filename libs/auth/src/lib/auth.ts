@@ -5,7 +5,7 @@ import {AuthenticationError} from 'apollo-server-express'
 import { environment } from '@env/graphql-api';
 
 
-export const authorizeAndVerify = async (req) =>{
+export const authorizeAndVerify = async (req:any) =>{
   //////////
   const authorizationHeader = req.headers.authorization || '';
   if(!authorizationHeader){
@@ -50,5 +50,5 @@ const authCodeMessages = {
 function authError(code:number, error?:any){
   // const req = this;
   // req.isAuth = false;
-  throw new AuthenticationError(authCodeMessages[code] + error)
+  throw new AuthenticationError( authCodeMessages[code] + error)
 }

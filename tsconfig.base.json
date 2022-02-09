@@ -19,7 +19,10 @@
       "@viewscape/orders": ["libs/orders/src/index.ts"],
       "@viewscape/posts": ["libs/posts/src/index.ts"],
       "@viewscape/products": ["libs/products/src/index.ts"],
-      "@viewscape/users": ["libs/users/src/index.ts"]
+      "@viewscape/users": ["libs/users/src/index.ts"],
+      "@viewscape/auth": ["libs/auth/src/index.ts"],
+      "@env/graphql-api": ["apps/graphql-api/src/environments/environment.ts"],"@env/rest-api": ["apps/rest-api/src/environments/environment.ts"],
+      "@env/env": ["environments/environment.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -1,3 +1,4 @@
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import {gql} from 'apollo-server-express'
 import { UserQl } from '@viewscape/users'
 import { PostsQl } from '@viewscape/posts'

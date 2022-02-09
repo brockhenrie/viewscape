@@ -1,3 +1,4 @@
+/* eslint-disable @nrwl/nx/enforce-module-boundaries */
 import {} from '@viewscape/posts'
 import { UserQl } from '@viewscape/users'
 import { PostsQl } from '@viewscape/posts';

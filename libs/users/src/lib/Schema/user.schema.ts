@@ -93,6 +93,7 @@ userSchema.methods['generateToken'] = async function () {
     {
       _id: user['id'],
       email: user['email'],
+      isAdmin: user['isAdmin']
     },
     environment.HashSecret,
     {
