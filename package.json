@@ -20,7 +20,7 @@
     "@angular/platform-browser-dynamic": "~13.2.0",
     "@angular/router": "~13.2.0",
     "@graphql-tools/utils": "^8.6.1",
-    "@nrwl/angular": "13.7.3",
+    "@nrwl/angular": "16.0.0",
     "@tsed/mongoose": "^6.101.0",
     "apollo": "^2.33.9",
     "apollo-server-core": "^3.6.2",
